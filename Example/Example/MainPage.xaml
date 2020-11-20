@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Example.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="black" Padding="24" CornerRadius="0">
+            <Image Source="netflixlogo.png">
+            </Image>
+        </Frame>
+
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="160" />
+                        <RowDefinition Height="140" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Image Source="layout1.jpg" />
+                        <Label Text="Drama" FontSize="Large" HorizontalOptions="Center" TextColor="Red"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Image Source="layout2.jpg"  Aspect="AspectFit"/>
+                        <Label Text="Comedy" FontSize="Large" HorizontalOptions="Center" TextColor="Red" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" Grid.Column="0">
+                        <Image Source="layout3.jpg" />
+                        <Label Text="New Release" FontSize="Large" HorizontalOptions="Center" TextColor="Red"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" Grid.Column="1">
+                        <Image Source="layout4.jpg" />
+                        <Label Text="Recomended For You" FontSize="Large" HorizontalOptions="Center" TextColor="Red"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Grid.Column="0">
+                        <Image Source="layout5.jpg" />
+                        <Label Text="Just Added" FontSize="Large" HorizontalOptions="Center" TextColor="Red"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Grid.Column="1">
+                        <Image Source="layout6.jpg" />
+                        <Label Text="Favourites" FontSize="Large" HorizontalOptions="Center" TextColor="Red"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" Grid.Column="0">
+                        <Image Source="layout7.jpg" />
+                        <Label Text="Romance" FontSize="Large" HorizontalOptions="Center" TextColor="Red"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" Grid.Column="1">
+                        <Image Source="layout8.jpg" />
+                        <Label Text="Kids" FontSize="Large" HorizontalOptions="Center" TextColor="red"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="4" Grid.Column="0">
+                        <Image Source="frozen.jpg" />
+                        <Label Text="Frozen" FontSize="Large" HorizontalOptions="Center" TextColor="Red"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="4" Grid.Column="1">
+                        <Image Source="Soul.png"/>
+                        <Label Text="Soul" FontSize="Large" HorizontalOptions="Center" TextColor="Red"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        </ContentPage>
