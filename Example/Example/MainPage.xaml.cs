@@ -14,5 +14,12 @@ namespace Example
         {
             InitializeComponent();
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var dramaPage = new DramaPage();
+
+            Navigation.PushAsync(dramaPage);
+        }
     }
 }
